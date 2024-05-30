@@ -23,7 +23,7 @@ dataSources:
           - event: ExecuteDecreaseOrder(indexed address,uint256,address,uint256,address,uint256,bool,uint256,bool,uint256,uint256)
             handler: handleExecuteDecreaseOrder
         file: ./src/mapping.ts
-        
+
   - kind: ethereum/contract
     name: BatchSender
     network: byteTestnet
@@ -202,7 +202,7 @@ dataSources:
           handler: handleEventLog1
       file: ./src/mapping.ts
 
-  every price feed should be added to ./src/priceFeeds.ts
+#  every price feed should be added to ./src/priceFeeds.ts
   - kind: ethereum/contract
     name: ChainlinkAggregatorETH
     network: byteTestnet
