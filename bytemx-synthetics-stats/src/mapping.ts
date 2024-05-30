@@ -606,8 +606,8 @@ export function handleEventLog1Fuji(event: EventLog1): void {
   handleEventLog1(event, "fuji");
 }
 
-export function handleEventLog1Xodex(event: EventLog1): void {
-  handleEventLog1(event, "xodex");
+export function handleEventLog1Byte(event: EventLog1): void {
+  handleEventLog1(event, "byteTestnet");
 }
 
 export function handleEventLog2Arbitrum(event: EventLog2): void {
@@ -626,6 +626,6 @@ export function handleEventLog2Fuji(event: EventLog2): void {
   handleEventLog2(event, "fuji");
 }
 
-export function handleEventLog2Xodex(event: EventLog2): void {
-  handleEventLog2(event, "xodex");
+export function handleEventLog2Byte(event: EventLog2): void {
+  handleEventLog2(event, "byteTestnet");
 }

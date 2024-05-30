@@ -7,11 +7,11 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: EventEmitter
-    network: xodex
+    network: byteTestnet
     source:
-      address: "0xe394E7Ffc99365b9B40F965E07aD86774911dCeB"
+      address: "0x5f44B41Eed7665643e0a04F8935dC47968173d54"
       abi: EventEmitter
-      startBlock: 21893946
+      startBlock: 425178
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
@@ -33,17 +33,17 @@ dataSources:
           file: ./abis/MarketToken.json
       eventHandlers:
         - event: EventLog1(address,string,indexed string,indexed bytes32,(((string,address)[],(string,address[])[]),((string,uint256)[],(string,uint256[])[]),((string,int256)[],(string,int256[])[]),((string,bool)[],(string,bool[])[]),((string,bytes32)[],(string,bytes32[])[]),((string,bytes)[],(string,bytes[])[]),((string,string)[],(string,string[])[])))
-          handler: handleEventLog1xodex
+          handler: handleEventLog1Byte
         - event: EventLog2(address,string,indexed string,indexed bytes32,indexed bytes32,(((string,address)[],(string,address[])[]),((string,uint256)[],(string,uint256[])[]),((string,int256)[],(string,int256[])[]),((string,bool)[],(string,bool[])[]),((string,bytes32)[],(string,bytes32[])[]),((string,bytes)[],(string,bytes[])[]),((string,string)[],(string,string[])[])))
-          handler: handleEventLog2xodex
+          handler: handleEventLog2Byte
       file: ./src/mapping.ts
   - kind: ethereum/contract
     name: EventEmitterOld
-    network: xodex
+    network: byteTestnet
     source:
-      address: "0xe394E7Ffc99365b9B40F965E07aD86774911dCeB"
+      address: "0x5f44B41Eed7665643e0a04F8935dC47968173d54"
       abi: EventEmitter
-      startBlock: 21893946
+      startBlock: 425178
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
@@ -67,17 +67,17 @@ dataSources:
         - event: EventLog(address,string,indexed string,(((string,address)[],(string,address[])[]),((string,uint256)[],(string,uint256[])[]),((string,int256)[],(string,int256[])[]),((string,bool)[],(string,bool[])[]),((string,bytes32)[],(string,bytes32[])[]),((string,bytes)[],(string,bytes[])[]),((string,string)[],(string,string[])[])))
           handler: handleEventLog
         - event: EventLog1(address,string,indexed string,indexed bytes32,(((string,address)[],(string,address[])[]),((string,uint256)[],(string,uint256[])[]),((string,int256)[],(string,int256[])[]),((string,bool)[],(string,bool[])[]),((string,bytes32)[],(string,bytes32[])[]),((string,bytes)[],(string,bytes[])[]),((string,string)[],(string,string[])[])))
-          handler: handleEventLog1xodex
+          handler: handleEventLog1Byte
         - event: EventLog2(address,string,indexed string,indexed bytes32,indexed bytes32,(((string,address)[],(string,address[])[]),((string,uint256)[],(string,uint256[])[]),((string,int256)[],(string,int256[])[]),((string,bool)[],(string,bool[])[]),((string,bytes32)[],(string,bytes32[])[]),((string,bytes)[],(string,bytes[])[]),((string,string)[],(string,string[])[])))
-          handler: handleEventLog2xodex
+          handler: handleEventLog2Byte
       file: ./src/mapping.ts
   - kind: ethereum/contract
     name: BatchSender
-    network: xodex
+    network: byteTestnet
     source:
       address: "0x0000000000000000000000000000000000000001"
       abi: BatchSender
-      startBlock: 23600000 # 23307981
+      startBlock: 425178 # 23307981
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
@@ -95,7 +95,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: MarketTokenTemplate
-    network: xodex
+    network: byteTestnet
     source:
       abi: MarketToken
     mapping:

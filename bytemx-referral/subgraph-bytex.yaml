@@ -1,14 +1,14 @@
-specVersion: 0.0.2
+specVersion: 0.0.4
 schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: BatchSender
-    network: arbitrum-goerli
+    network: byteTestnet
     source:
-      address: "0x1070f775e8eb466154BBa8FA0076C4Adc7FE17e8"
+      address: "0x0000000000000000000000000000000000000001"
       abi: BatchSender
-      startBlock: 29558951
+      startBlock: 425339
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
@@ -25,11 +25,11 @@ dataSources:
 
   - kind: ethereum/contract
     name: PositionManager
-    network: arbitrum-goerli
+    network: byteTestnet
     source:
-      address: "0x87a4088Bd721F83b6c2E5102e2FA47022Cb1c831"
+      address: "0x0000000000000000000000000000000000000001"
       abi: PositionManager
-      startBlock: 29558951
+      startBlock: 425339
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
@@ -49,11 +49,11 @@ dataSources:
 
   - kind: ethereum/contract
     name: PositionManager_v2
-    network: arbitrum-goerli
+    network: byteTestnet
     source:
-      address: "0x75E42e6f01baf1D6022bEa862A28774a9f8a4A0C"
+      address: "0x0000000000000000000000000000000000000001"
       abi: PositionManager
-      startBlock: 29558951
+      startBlock: 425339
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
@@ -73,11 +73,11 @@ dataSources:
 
   - kind: ethereum/contract
     name: PositionRouter
-    network: arbitrum-goerli
+    network: byteTestnet
     source:
-      address: "0x3d6ba331e3d9702c5e8a8d254e5d8a285f223aba"
+      address: "0x0000000000000000000000000000000000000001"
       abi: PositionRouter
-      startBlock: 29558951
+      startBlock: 425339
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
@@ -97,11 +97,11 @@ dataSources:
 
   - kind: ethereum/contract
     name: PositionRouter_v2
-    network: arbitrum-goerli
+    network: byteTestnet
     source:
-      address: "0xb87a436B93fFE9D75c5cFA7bAcFff96430b09868"
+      address: "0x0000000000000000000000000000000000000001"
       abi: PositionRouter
-      startBlock: 29558951
+      startBlock: 425339
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
@@ -121,11 +121,11 @@ dataSources:
 
   - kind: ethereum/contract
     name: ReferralStorage
-    network: arbitrum-goerli
+    network: byteTestnet
     source:
-      address: "0x995E905E471D53B7c5d0dbf6406860Cb3C029e95"
+      address: "0x85f729b506d582149261c25DFBbb4115a45F5F41"
       abi: ReferralStorage
-      startBlock: 29558951
+      startBlock: 425339
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
@@ -161,11 +161,11 @@ dataSources:
 
   - kind: ethereum/contract
     name: EventEmitter
-    network: arbitrum-goerli
+    network: byteTestnet
     source:
-      address: "0x2fbE45fCb58B7106CF0a3Be9225D5Ed5A1004cc4"
+      address: "0x5f44B41Eed7665643e0a04F8935dC47968173d54"
       abi: EventEmitter
-      startBlock: 29558951
+      startBlock: 425178
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
@@ -181,23 +181,23 @@ dataSources:
       file: ./src/mapping.ts
 
   # every price feed should be added to ./src/priceFeeds.ts
-  - kind: ethereum/contract
-    name: ChainlinkAggregatorETH
-    network: arbitrum-goerli
-    source:
-      address: "0xc975defb12c5e83f2c7e347831126cf136196447"
-      abi: ChainlinkAggregator
-      startBlock: 25558951
-    mapping:
-      kind: ethereum/events
-      apiVersion: 0.0.4
-      language: wasm/assemblyscript
-      entities:
-        - ChainlinkPrice
-      abis:
-        - name: ChainlinkAggregator
-          file: ./abis/ChainlinkAggregator.json
-      eventHandlers:
-        - event: AnswerUpdated(indexed int256,indexed uint256,uint256)
-          handler: handleAnswerUpdated
-      file: ./src/mapping.ts
+  # - kind: ethereum/contract
+  #   name: ChainlinkAggregatorAVAX
+  #   network: byteTestnet
+  #   source:
+  #     address: "0x6c2441920404835155f33d88faf0545b895871b1"
+  #     abi: ChainlinkAggregator
+  #     startBlock: 22307981
+  #   mapping:
+  #     kind: ethereum/events
+  #     apiVersion: 0.0.4
+  #     language: wasm/assemblyscript
+  #     entities:
+  #       - ChainlinkPrice
+  #     abis:
+  #       - name: ChainlinkAggregator
+  #         file: ./abis/ChainlinkAggregator.json
+  #     eventHandlers:
+  #       - event: AnswerUpdated(indexed int256,indexed uint256,uint256)
+  #         handler: handleAnswerUpdated
+  #     file: ./src/mapping.ts

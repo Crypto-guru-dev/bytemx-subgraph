@@ -2,16 +2,16 @@
   "name": "gmx",
   "license": "UNLICENSED",
   "scripts": {
-    "codegen": "graph codegen ./subgraph-xodex.yaml",
-    "build": "graph build ./subgraph-xodex.yaml",
-    "create-local": "graph create --node http://127.0.0.1:8020 synthetics-xodex-stats",
+    "codegen": "graph codegen ./subgraph-bytex.yaml",
+    "build": "graph build ./subgraph-bytex.yaml",
+    "create-local": "graph create --node http://127.0.0.1:8020 synthetics-bytex-stats",
     "deploy-satsuma:wannsee": "graph deploy synthetics-wannsee-stats ./subgraph-wannsee.yaml --version-label $(git rev-parse --abbrev-ref HEAD)-$(date '+%y%m%d%H%M%S')-$(git rev-parse --short HEAD) --node https://subgraphs.alchemy.com/api/subgraphs/deploy --ipfs https://ipfs.satsuma.xyz --deploy-key $(cat .satsuma_token)",
     "deploy-satsuma:fuji": "graph deploy synthetics-fuji-stats ./subgraph-fuji.yaml --version-label $(git rev-parse --abbrev-ref HEAD)-$(date '+%y%m%d%H%M%S')-$(git rev-parse --short HEAD) --node https://subgraphs.alchemy.com/api/subgraphs/deploy --ipfs https://ipfs.satsuma.xyz --deploy-key $(cat .satsuma_token)",
     "deploy-satsuma:goerli": "graph deploy synthetics-goerli-stats ./subgraph-goerli.yaml --version-label $(git rev-parse --abbrev-ref HEAD)-$(date '+%y%m%d%H%M%S')-$(git rev-parse --short HEAD) --node https://subgraphs.alchemy.com/api/subgraphs/deploy --ipfs https://ipfs.satsuma.xyz --deploy-key $(cat .satsuma_token)",
     "deploy-satsuma:arbitrum": "graph deploy synthetics-arbitrum-stats ./subgraph-arbitrum.yaml --version-label $(git rev-parse --abbrev-ref HEAD)-$(date '+%y%m%d%H%M%S')-$(git rev-parse --short HEAD) --node https://subgraphs.alchemy.com/api/subgraphs/deploy --ipfs https://ipfs.satsuma.xyz --deploy-key $(cat .satsuma_token)",
     "deploy-satsuma:avalanche": "graph deploy synthetics-avalanche-stats ./subgraph-avalanche.yaml --version-label $(git rev-parse --abbrev-ref HEAD)-$(date '+%y%m%d%H%M%S')-$(git rev-parse --short HEAD) --node https://subgraphs.alchemy.com/api/subgraphs/deploy --ipfs https://ipfs.satsuma.xyz --deploy-key $(cat .satsuma_token)",
     "deploy-satsuma:all": "yarn deploy-satsuma:fuji && yarn deploy-satsuma:arbitrum && yarn deploy-satsuma:avalanche",
-    "deploy-local": "graph deploy synthetics-xodex-stats ./subgraph-xodex.yaml --ipfs http://localhost:5001 --node http://127.0.0.1:8020"
+    "deploy-local": "graph deploy synthetics-bytex-stats ./subgraph-bytex.yaml --ipfs http://localhost:5001 --node http://127.0.0.1:8020"
   },
   "devDependencies": {
     "@graphprotocol/graph-cli": "^0.20.0",

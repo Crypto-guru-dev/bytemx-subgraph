@@ -5,39 +5,39 @@ export function getTokenByPriceFeed(priceFeed: string): Address {
   let priceFeedToToken = new Map<string, string>();
 
   // Avalanche Fuji AVAX
-  priceFeedToToken.set(
-    "0x6c2441920404835155f33d88faf0545b895871b1",
-    "0x1D308089a2D1Ced3f1Ce36B1FcaF815b07217be3"
-  );
+  // priceFeedToToken.set(
+  //   "0x6c2441920404835155f33d88faf0545b895871b1",
+  //   "0x1D308089a2D1Ced3f1Ce36B1FcaF815b07217be3"
+  // );
 
-  // Avalanche mainnet AVAX
-  priceFeedToToken.set(
-    "0x9450a29ef091b625e976ce66f2a5818e20791999",
-    "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7"
-  );
+  // // Avalanche mainnet AVAX
+  // priceFeedToToken.set(
+  //   "0x9450a29ef091b625e976ce66f2a5818e20791999",
+  //   "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7"
+  // );
 
-  // Avalanche mainnet esGMX
-  priceFeedToToken.set(
-    "0x3ec39652e73337350a712fb418dbb4c2a8247673",
-    "0xff1489227bbaac61a9209a08929e4c2a526ddd17"
-  );
+  // // Avalanche mainnet esGMX
+  // priceFeedToToken.set(
+  //   "0x3ec39652e73337350a712fb418dbb4c2a8247673",
+  //   "0xff1489227bbaac61a9209a08929e4c2a526ddd17"
+  // );
 
-  // Arbitrum Goerli ETH
-  priceFeedToToken.set(
-    "0xc975defb12c5e83f2c7e347831126cf136196447",
-    "0xe39Ab88f8A4777030A534146A9Ca3B52bd5D43A3"
-  );
+  // // Arbitrum Goerli ETH
+  // priceFeedToToken.set(
+  //   "0xc975defb12c5e83f2c7e347831126cf136196447",
+  //   "0xe39Ab88f8A4777030A534146A9Ca3B52bd5D43A3"
+  // );
 
-  // Arbitrum mainnet ETH
-  priceFeedToToken.set(
-    "0x3607e46698d218b3a5cae44bf381475c0a5e2ca7",
-    "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1"
-  );
+  // // Arbitrum mainnet ETH
+  // priceFeedToToken.set(
+  //   "0x3607e46698d218b3a5cae44bf381475c0a5e2ca7",
+  //   "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1"
+  // );
 
   // Arbitrum mainnet esGMX
   priceFeedToToken.set(
-    "0xf6328f007a2fdc547875e24a3bc7e0603fd01727",
-    "0xf42ae1d54fd613c9bb14810b0588faaa09a426ca"
+    "0x092E4398DAfb94BcA2187490Ab6ca9aC985A7817",
+    "0x0e2dE4cafE26105bE7C9A8748D8588e6E7DD0147"
   );
 
   let address = priceFeedToToken.get(priceFeed);
