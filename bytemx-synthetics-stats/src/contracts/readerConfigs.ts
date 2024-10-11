@@ -49,9 +49,9 @@ readerContractByNetwork.set(
 readerContractByNetwork.set(
   "byteTestnet",
   new ReaderContractConfig(
-    "0x106e4269a12C5ec564141b031918BB3789EcE6B6",
+    "0xED44eB7322b9e37b8C1345509396289b5393Dd85",
     "0x122B4c11459bAd7D21F317710051418BC1550f0E",
-    21894368 + 1
+    111349 + 1
   )
 );
 

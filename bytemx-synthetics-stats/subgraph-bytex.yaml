@@ -9,9 +9,9 @@ dataSources:
     name: EventEmitter
     network: byteTestnet
     source:
-      address: "0x5f44B41Eed7665643e0a04F8935dC47968173d54"
+      address: "0xEB6725CDAaE9927101C22f6ff4b9a55f9e57022B"
       abi: EventEmitter
-      startBlock: 425178
+      startBlock: 111391
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
@@ -41,9 +41,9 @@ dataSources:
     name: EventEmitterOld
     network: byteTestnet
     source:
-      address: "0x5f44B41Eed7665643e0a04F8935dC47968173d54"
+      address: "0xEB6725CDAaE9927101C22f6ff4b9a55f9e57022B"
       abi: EventEmitter
-      startBlock: 425178
+      startBlock: 111391
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
@@ -77,7 +77,7 @@ dataSources:
     source:
       address: "0x0000000000000000000000000000000000000001"
       abi: BatchSender
-      startBlock: 425178 # 23307981
+      startBlock: 111391 # 23307981
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4

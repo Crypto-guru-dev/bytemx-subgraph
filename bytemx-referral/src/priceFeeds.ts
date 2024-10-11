@@ -36,8 +36,8 @@ export function getTokenByPriceFeed(priceFeed: string): Address {
 
   // Arbitrum mainnet esGMX
   priceFeedToToken.set(
-    "0x092E4398DAfb94BcA2187490Ab6ca9aC985A7817",
-    "0x0e2dE4cafE26105bE7C9A8748D8588e6E7DD0147"
+    "0x168EbbF3c60D59Bd194b053156d33a5Febe81AA0",
+    "0x5D3E883C41E988Da48A01aBB4661f02E4315fcaF"
   );
 
   let address = priceFeedToToken.get(priceFeed);
