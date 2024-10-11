@@ -206,9 +206,9 @@ dataSources:
     name: ChainlinkAggregatorETH
     network: byteTestnet
     source:
-      address: "0x092E4398DAfb94BcA2187490Ab6ca9aC985A7817"
+      address: "0x168EbbF3c60D59Bd194b053156d33a5Febe81AA0"
       abi: ChainlinkAggregator
-      startBlock: 304970
+      startBlock: 169304
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
